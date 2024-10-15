@@ -6,6 +6,8 @@
     <title>Coding Assignment 5</title>
 </head>
 <body>
+    <div id="box">
+    </div>
     <script>
         var text="In the starter code, some comments start with the words TO DO This is where you could add your lines of codes to solve this assignment. The words will need to be scrubbed of any punctuation . To do so, you may choose to use regex and replace or you may choose to get rid of any punctuation marks another way. It is up to you Watch out for casing . The JavaScript compiler does not think a lowercase and an uppercase letter are the same letter the way humans do . To avoid this set the entire string to be in lowercase"
 var words=text.toUpperCase().replace(/[.,]/g, "").split(" ")
@@ -24,7 +26,8 @@ words.forEach(item => {Obj[item] = (Obj[item] || 0) +1})
     }
     a.sort((z, y)=>{return z[1] - y[1]})
     d=a.splice(a.length-3)
-    console.log(d)
+    console.log(d);
+        document.getElementById("box").innerHTML=d;
 
     </script>
 </body>
